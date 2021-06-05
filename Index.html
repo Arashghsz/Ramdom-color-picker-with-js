@@ -1,28 +1,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="Css/style.css">
     <title>Random color picker</title>
 </head>
 <body>
     <div class="container col-12 col-sm-8 mt-50">
-        <h1 class="alert bg-gradient col-8 mt-1 ">Get your random color </h1>   <figcaption class=" figure-caption ml-5">CLICK on color to copy to Clipboard! </figcaption>
+        <h1 class="alert bg-gradient col-8 mt-1 ">Get your random color </h1>   <figcaption class="figure-caption ml-5">CLICK on color to copy to Clipboard! </figcaption>
         <div class="bg-info rounded-3 justify-content-center text-center mt-5 p-3 first-title">
-            <h2 class="animate__animated animate__bounceInRight fs-2">Your background color is : <small class="badge bg-primary a-color animate__animated animate__fadeInDownBig fs-3" onclick="copyToClipboard('#copyColor')" id="copyColor">#807373</small></h2>
+            <h2>Your background color is : <small class="badge bg-primary a-color " onclick="copyToClipboard('#copyColor')" id="copyColor">#807373</small></h2>
         </div>
         <label class="form-label mt-2">Speed range</label>
         <input type="range" class="form-range" min="0" max="1000" step="10" id="speedChange">
         <div id="demo" class="d-none"></div>
-        <div class="btn btn-outline-danger d-block col-6 col-sm-8 col-lg-4 m-auto mt-4 a-btn animate__animated animate__jackInTheBox animate__slower"> stop!</div>
-        <div class="btn btn-info d-block col-6 col-sm-8 col-lg-4 m-auto mt-4 a-btn-1 animate__animated animate__jackInTheBox "> Start!</div>
+        <div class="btn btn-outline-danger d-block col-6 col-sm-8 col-lg-4 m-auto mt-4 a-btn"> stop!</div>
+        <div class="btn btn-info d-block col-6 col-sm-8 col-lg-4 m-auto mt-4 a-btn-1"> Start!</div>
     </div>
-    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

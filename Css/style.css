@@ -18,19 +18,10 @@ body{
 .a-color{
     cursor: pointer;
 }
-.a-btn{
+.a-btn, .a-btn-1{
     font-family: 'Limelight', cursive;
     font-weight: 600;
 }
-.a-btn-1{
-    font-family: 'Limelight', cursive;
-    font-weight: 900;
-    overflow-x: hidden;
-}
-.figure-caption{
+.figure-caption, .swal-modal{
     font-family: monospace;
-}
-.swal-modal{
-    font-family: monospace;
-
 }
